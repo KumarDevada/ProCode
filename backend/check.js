@@ -15,7 +15,7 @@ const sequelize = new Sequelize(process.env.DB_URL, {
     dialectOptions: {
         ssl: {
           require: true, // Require SSL
-          rejectUnauthorized: true, // Reject unauthorized connections (validate server's SSL certificate)
+          rejectUnauthorized: false, // Reject unauthorized connections (validate server's SSL certificate)
           // Additional SSL options (optional)
           // For example, provide path to CA certificates if not using system default
           // ca: '/path/to/ca-certificates.pem'
